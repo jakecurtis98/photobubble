@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Panorama | {{ $panorama->name }}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="css/Viewer-Style.css rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/three@0.104.0/build/three.min.js"></script>
+    <script src="js/THREEx.WindowResize.js"></script>
+    <script src="https://unpkg.com/three@0.104.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="js/stats.min.js"></script>
+    <script src="https://unpkg.com/three@0.104.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three.interaction@0.2.2/build/three.interaction.js"></script>
+    <script src="js/script-video.js"></script>
+    <script>
+        //var backgroundURL = "images/PANO_20170903_164214.jpg";
+        var backgroundURL = "video.mp4";
+    </script>
+</head>
+<body oncontextmenu="return false;">
+<div class="loader">
+    <div class="lds-dual-ring"></div>
+</div>
+<video style="display: none" id="myVideo" loop>
+    <source src="video.mp4" type="video/webm">
+</video>
+
+</body>
+</html>
